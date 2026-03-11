@@ -8,87 +8,35 @@
 
 </head>
 
-<body style="margin:0px; overflow:hidden;">
+<body style="margin:0; overflow:hidden;">
 
 <a-scene embedded arjs>
 
-<!-- Marker -->
+<a-assets>
+<video 
+id="cybervideo"
+src="cyber.mp4"
+preload="auto"
+loop
+crossorigin="anonymous">
+</video>
+</a-assets>
+
 <a-marker preset="hiro">
 
-<!-- PASSWORD SECURITY LOCK -->
-
-<a-box 
-position="0 0.3 0"
-depth="0.4"
-height="0.6"
-width="0.6"
-color="#1565C0">
-</a-box>
-
-<a-torus
-radius="0.3"
-radius-tubular="0.05"
-position="0 0.8 0"
-color="silver">
-</a-torus>
+<a-video
+src="#cybervideo"
+width="2"
+height="1"
+position="0 1 0"
+rotation="-90 0 0">
+</a-video>
 
 <a-text
-value="Use Strong Passwords"
-color="green"
-align="center"
-position="-1 1.3 0">
-</a-text>
-
-<!-- MALWARE VIRUS -->
-
-<a-sphere
-radius="0.35"
-color="purple"
-position="1 0.5 0">
-</a-sphere>
-
-<a-cone position="1.4 0.5 0" height="0.3" radius-bottom="0.05" color="red"></a-cone>
-<a-cone position="0.6 0.5 0" height="0.3" radius-bottom="0.05" color="red"></a-cone>
-<a-cone position="1 0.5 0.4" height="0.3" radius-bottom="0.05" color="red"></a-cone>
-
-<a-text
-value="Beware of Malware!"
+value="Cybersecurity Awareness"
 color="red"
 align="center"
-position="0.3 1.2 0">
-</a-text>
-
-<!-- PHISHING EMAIL -->
-
-<a-box
-position="-1 0.5 0"
-depth="0.1"
-height="0.6"
-width="1"
-color="orange">
-</a-box>
-
-<a-text
-value="Phishing Attack!"
-color="yellow"
-align="center"
-position="-1.6 1.2 0">
-</a-text>
-
-<!-- SECURITY SHIELD -->
-
-<a-cylinder
-radius="0.3"
-height="0.7"
-color="green"
-position="0 0.4 -1">
-</a-cylinder>
-
-<a-text
-value="Stay Cyber Safe"
-color="white"
-align="center"
-position="-0.8 1.2 -1">
+position="-1 1.5 0">
 </a-text>
 
 </a-marker>
